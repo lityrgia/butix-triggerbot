@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{dd30dce8-d68c-48e0-839c-5cd0493d4cf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\Utils">
+      <UniqueIdentifier>{c711c69f-2dae-4ecd-8b20-29e8dccf55a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{3c8c8850-023c-487e-99fa-c91bbb1556a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Modules">
+      <UniqueIdentifier>{bfc3cc78-b356-4910-b257-1325dfa3653b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Classes">
+      <UniqueIdentifier>{a3bc6f65-b4db-48a9-a95b-062d9c8b5b27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Gui">
+      <UniqueIdentifier>{b76567b8-6102-4bd7-b338-d7024735d452}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ext">
+      <UniqueIdentifier>{45f8cf5c-ef61-4379-b805-2b56fd18ab92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ext\ImGui">
+      <UniqueIdentifier>{b93171df-c06c-44e4-bafa-757aaa065665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ext\Kiero">
+      <UniqueIdentifier>{0894ef64-1996-442b-b4a8-9fbf56d829b4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="include\imgui\imgui.cpp">
+      <Filter>Ext\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="include\imgui\imgui_demo.cpp">
+      <Filter>Ext\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="include\imgui\imgui_draw.cpp">
+      <Filter>Ext\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="include\imgui\imgui_impl_opengl3.cpp">
+      <Filter>Ext\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="include\imgui\imgui_impl_win32.cpp">
+      <Filter>Ext\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="include\imgui\imgui_tables.cpp">
+      <Filter>Ext\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="include\imgui\imgui_widgets.cpp">
+      <Filter>Ext\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="include\kiero\kiero.cpp">
+      <Filter>Ext\Kiero</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Classes\CEntity.cpp">
+      <Filter>Main\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Classes\CMinecraft.cpp">
+      <Filter>Main\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Classes\CPlayer.cpp">
+      <Filter>Main\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Gui\gui.cpp">
+      <Filter>Main\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Gui\imguiHook.cpp">
+      <Filter>Main\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Modules\Butix.cpp">
+      <Filter>Main\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Modules\TriggerBot.cpp">
+      <Filter>Main\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\Utils\memory.cpp">
+      <Filter>SDK\Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\json.hpp">
+      <Filter>SDK\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imconfig.h">
+      <Filter>Ext\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imgui.h">
+      <Filter>Ext\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imgui_impl_opengl3.h">
+      <Filter>Ext\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imgui_impl_opengl3_loader.h">
+      <Filter>Ext\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imgui_impl_win32.h">
+      <Filter>Ext\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imgui_internal.h">
+      <Filter>Ext\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imstb_rectpack.h">
+      <Filter>Ext\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imstb_textedit.h">
+      <Filter>Ext\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imstb_truetype.h">
+      <Filter>Ext\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\kiero\kiero.h">
+      <Filter>Ext\Kiero</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\includes.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\types.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Classes\CEntity.h">
+      <Filter>Main\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Classes\CMinecraft.h">
+      <Filter>Main\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Classes\CPlayer.h">
+      <Filter>Main\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Gui\gui.h">
+      <Filter>Main\Gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Gui\imguiHook.h">
+      <Filter>Main\Gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Gui\rubik.hpp">
+      <Filter>Main\Gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Modules\Butix.h">
+      <Filter>Main\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Modules\TriggerBot.h">
+      <Filter>Main\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\options.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Utils\memory.h">
+      <Filter>SDK\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\Utils\xorstr.hpp">
+      <Filter>SDK\Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
