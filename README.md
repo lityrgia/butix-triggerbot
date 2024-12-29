@@ -2,7 +2,7 @@
 ![изображение](https://github.com/user-attachments/assets/843204cf-22ac-49a0-8382-8d00842bae34)
 
 # Description
-Working only for `1.16.5` and `1.16.5 optifine`, it's using mouse_event to attack
+Working only for `1.16.x` and `1.16.x optifine`, it's using mouse_event to attack
 (maybe i will make it through packets)
 
 # Features 💫
