@@ -5,7 +5,7 @@
 Working only for `1.16.x` and `1.16.x optifine`, it's using mouse_event to attack
 (maybe i will make it through packets)
 
-# Features 💫
+# 💫 Features 
 - Delay - delay between clicks
 - Hit chance
 - Random factor - randomizing delay by offset (ms)
@@ -17,8 +17,8 @@ Working only for `1.16.x` and `1.16.x optifine`, it's using mouse_event to attac
 - Key binds
 - Detach - unloading dll
 
-# How to use 🛴
+# 🛴 How to use 
 Start minecraft, wait until it's loaded. Inject cheat and well done, Insert to open menu.
 
 You can use my silent injector to avoid manual checking
-- https:gaga
+- https://github.com/lityrgia/silent-injector
