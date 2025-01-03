@@ -85,7 +85,7 @@ bool keyPressed = false;
 
 void renderGui()
 {
-    ImGui::Begin(xorstr_("Butix Triggerbot"));
+    ImGui::Begin(xorstr_("Btx"));
     ImGui::SetWindowSize(menuSize, ImGuiCond_Always);
 
     ImGui::Indent(10.f);
