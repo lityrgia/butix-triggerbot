@@ -1,4 +1,7 @@
-﻿#include "SDK/includes.h"
+﻿#define IMGUI_DISABLE_METRICS_WINDOW
+#define IMGUI_DISABLE_DEBUG_LOG
+#define IMGUI_DISABLE_DEBUG_TOOLS
+#include "SDK/includes.h"
 
 #pragma comment(lib, "libMinHook.x64.lib")
 

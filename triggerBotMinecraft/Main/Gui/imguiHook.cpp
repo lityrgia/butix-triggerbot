@@ -98,6 +98,7 @@ namespace ImGuiHook
 
 		setImguiStyle();
 		ImGuiIO& io = ImGui::GetIO();
+		io.IniFilename = NULL;
 		io.Fonts->AddFontFromMemoryTTF((void*)custom_font, sizeof(custom_font), 20.f);
 
 		tStatus &= ImGui_ImplWin32_Init(hWnd);
