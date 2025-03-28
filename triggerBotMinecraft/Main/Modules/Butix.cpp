@@ -4,6 +4,8 @@
 #include "../Main/Gui/imguiHook.h"
 #include "../Main/Gui/gui.h"
 
+#include "jni.h"
+
 jclass butix::Butix::findClass(const char* name) {
     jclass cls = nullptr;
 
@@ -46,11 +48,12 @@ void butix::Butix::getLaunchwrapper() {
 
 
 void butix::Butix::attach() {
-		jvm = Memory::GetAbsoluteAddress<JavaVM*>(Memory::FindPattern(xorstr_("jvm.dll"), xorstr_("48 8D 0D ?? ?? ?? ?? 45 33 C0 FF D0")), 3);
-
+		//jvm = Memory::GetAbsoluteAddress<JavaVM*>(Memory::FindPattern(xorstr_("jvm.dll"), xorstr_("48 8D 0D ?? ?? ?? ?? 45 33 C0 FF D0")), 3);
+		JNI_GetCreatedJavaVMs(&jvm, 1, nullptr);
+	
 		if (jvm == nullptr)
 		{
-			MessageBoxA(0, "ERROR", "", MB_ICONASTERISK);
+			MessageBoxA(0, "ERROR", "Failed to init jvm", MB_ICONASTERISK);
 		}
 
 		jvm->AttachCurrentThread((void**)&env, nullptr);
